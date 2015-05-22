@@ -1,6 +1,6 @@
 {
   "name": "nagios-redis",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nagios plugin to monitor redis status",
   "main": "check_redis.js",
   "bin": {
