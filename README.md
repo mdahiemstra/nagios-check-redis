@@ -33,6 +33,21 @@ Now you can monitor redis servers by adding:
 	    check_command           check_redis!6379
 	}
 
+## Usage monitoring remote host with NRPE
+
+Add the command to your NRPE configuration on your remote host:
+
+	command[check_redis]=check_redis
+
+Monitor the service on your Nagios host:
+
+	define service{
+	        use                             generic-service
+	        host_name                       your host
+	        service_description             Redis status
+	        check_command                   check_nrpe!check_redis
+	}
+
 ## License
 
 nope
