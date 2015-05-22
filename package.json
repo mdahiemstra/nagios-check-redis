@@ -1,0 +1,25 @@
+{
+  "name": "check_redis",
+  "version": "1.0.0",
+  "description": "Nagios plugin to monitor redis status",
+  "main": "check_redis.js",
+  "bin": {
+    "check_redis": "./check_redis.js"
+  },
+  "keywords": [
+    "nagios",
+    "redis"
+  ],
+  "author": "Michel Hiemstra <info@michelhiemstra.nl>",
+  "license": "none",
+  "dependencies": {
+    "hiredis": "^0.3.0",
+    "optimist": "^0.6.1",
+    "redis": "^0.12.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdahiemstra/nagios-check-redis.git"
+  },
+  "preferGlobal": "true"
+}
